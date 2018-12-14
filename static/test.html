@@ -1,0 +1,60 @@
+</<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="./css/main.css" >
+    <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Montserrat'>
+    <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Raleway'>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Ng Jian Zhen, TLDR">
+    <meta name="description" content="Short random reviews">
+    <meta name="author" content="Ng Jian Zhen">
+    <base href="./">
+    <title>Welcome to TLDR WIP website!</title>
+  </head>
+  <body>
+    <header id="mainheader">
+      <div id="mainTitle">Too Long; Didn't Read</div>
+      <div id="mainTitleDesc">Summarizing the summary.</div>
+
+      <nav role="navigation">
+        <div id="topnav">
+          <a><span id="SideNavTog" title="Toggle side panel" onclick="toggleSideNav()"><i class="fas fa-align-justify"></i></span></a>
+
+          <a href="welcome.html">Home</a>
+
+          <div class="dropdown">
+            <button class="dropbtn">Reviews</button>
+            <div id="dropdown-content">
+              <a href="./review/food/index.html">Food</a>
+              <a href="./review/tech/index.html">Technology</a>
+            </div>
+          </div>
+
+          <a href="#contact">Contact</a>
+          <a href="about.html">About</a>
+        </div>
+      </nav>
+
+    </header>
+
+    <aside>
+      <div id="leftsidenav" class="sidenav">
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+      </div>
+    </aside>
+
+    <main>
+      <div id="mainContent">
+        <iframe id="iframe_main" src=""></iframe>
+      </div>
+    </main>
+
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type='text/javascript' src="./js/main.js"></script>
+</html>

@@ -1,0 +1,40 @@
+section h1{
+  text-align: left;
+  font-family: "Montserrat", cursive, sans-serif;
+  font-size: 3rem;
+  margin: 0;
+}
+
+section h2{
+  text-align: left;
+  font-family: "Montserrat", cursive, sans-serif;
+  font-size: 2rem;
+  margin: 0;
+}
+
+section p{
+  text-align: left;
+  font-family: "Raleway", cursive, sans-serif;
+  font-size: 1rem;
+}
+
+.split-article-header{
+  text-align: left;
+  font-family: "Raleway", cursive, sans-serif;
+  font-size: 1rem;
+}
+
+.split-article-header span{
+  float: right;
+  font-family: "Raleway", cursive, sans-serif;
+  font-size: 1rem;
+}
+
+hr {
+    display: block;
+    height: 5px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}

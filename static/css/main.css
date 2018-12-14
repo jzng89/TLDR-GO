@@ -1,0 +1,243 @@
+/*CSS template for TLDR mainpage v1
+Author: Ng Jian Zhen
+Created: 6-December-2018
+Last Modified: 11-December-2018*/
+
+/*main header text*/
+#mainTitle{
+  display: block;
+  text-align: center;
+  font-family: "Montserrat", cursive, sans-serif;
+  font-size: 4em;
+  font-weight: bold;
+  color: rgb(64,224,208);
+  padding:40px 0px 0px;
+
+}
+
+#mainTitleDesc{
+  display: block;
+  text-align: center;
+  font-family: "Raleway", cursive, sans-serif;
+  font-size: 1em;
+  color: rgb(64,224,208);
+  padding: 30px 0px 0px;
+}
+
+#split-mainTitle{
+  visibility: hidden;
+  position:static;
+
+  text-align: left;
+  font-family: "Montserrat", cursive, sans-serif;
+  font-size: 2em;
+  color: rgb(64,224,208);
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+#split-mainTitle span{
+  float: right;
+  position:static;
+  text-align: right;
+  font-family: "Raleway", cursive, sans-serif;
+  color: rgb(64,224,208);
+  font-size: 1rem;
+  margin-top: 10px;
+  margin-right: 5px;
+}
+
+/*banner*/
+#mainheader{
+  height: 220px;
+  width: 100%;
+  background-image: url(../img/banner.jpg) ;
+  background-size: cover;
+  background-position:center center;
+  background-repeat: no-repeat;
+}
+
+/*-----Top navigation bar style-----*/
+/* Configure top navigation pane properties */
+nav{
+  margin-top: 55px;
+}
+
+.fa-align-justify{
+  font-size:1.87rem;
+}
+
+#topnav {
+  display: block;
+  background-color: rgb(25,25,25);
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+#topnav a{
+  float: left;
+  color: rgb(64,224,208);
+  font-family: "Raleway", cursive, sans-serif;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-weight:normal;
+}
+
+/* Change the properties of links on hover */
+#topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: grey;
+  color: rgb(64,224,208);
+  font-weight: bold;
+}
+
+/* Add a color to the active/current link */
+#topnav a.active {
+  background-color: grey;
+  color: rgb(64,224,208);
+  font-weight: bold;
+}
+
+/*Set font for dropdown menu in navigation*/
+.dropdown{
+  float: left;
+  overflow: hidden;
+}
+
+/*dropdown button*/
+.dropdown .dropbtn{
+  font-family: "Raleway", cursive, sans-serif;
+  font-size:1.5rem;
+  border: none;
+  outline: none;
+  color: rgb(64,224,208);
+  padding: 14px 16px;
+  background-color: inherit;
+}
+
+/* Dropdown content (hidden by default) */
+#dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgb(175,238,238);
+  width: 160px;
+  z-index: 1;
+}
+
+
+/* Links inside the dropdown */
+#dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+#dropdown-content a:hover {
+  background-color: transparent;
+  color: black;
+  text-decoration-line: none;
+  font-weight: bold;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover #dropdown-content {
+  display: block;
+}
+
+
+/*-----Side navigation bar style-----*/
+/* The side navigation menu */
+aside{
+  float: left;
+}
+
+#leftsidenav {
+  margin-top:286px;
+  margin-left: 8px;
+  height: 100%; /* 100% Full-height */
+  width: 0px; /* 0 width - change this with JavaScript */
+  position: absolute; /* Stay in place */
+  z-index: -1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: rgb(25,25,25); /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+#leftsidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  color: rgb(64,224,208);
+  font-family: "Raleway", cursive, sans-serif;
+  font-size: 1.5rem;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+#leftsidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  #leftsidenav {padding-top: 15px;}
+  #leftsidenav a {font-size: 18px;}
+}
+
+/*-----iFrame style-----*/
+iframe{
+  margin: 0;
+  padding: 0;
+  border: none;
+  width:100%;
+  height:100%;
+  overflow:hidden;
+}
+
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#mainContent {
+  transition: margin-left .5s;
+  margin-top: 80px;
+  margin-left: 0px;
+  padding: 0px;
+}
+
+
+/*-----------------------Code for scrolling----------------------*/
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.stickyTopNav {
+  position: fixed;
+  top: 0;
+  width: 99.15%;
+}
+
+/* The sticky class is added to the dropdown with JS when it reaches its scroll position */
+.stickydropdown{
+  top:57px;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
+}
+
+.stickyHeader{
+  position: fixed;
+  top: -120px;
+}
+
+/*disable transitions during scroll*/
+.notransition {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -o-transition: none !important;
+  transition: none !important;
+}
