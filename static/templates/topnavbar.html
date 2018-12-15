@@ -1,0 +1,20 @@
+{{define "topnavbar"}}
+      <nav role="navigation">
+        <div id="topnav">
+          <a><span id="SideNavTog" title="Toggle side panel" onclick="toggleSideNav()"><i class="fas fa-align-justify"></i></span></a>
+
+          <a href="./index">Home</a>
+
+          <div class="dropdown">
+            <button class="dropbtn">Reviews</button>
+            <div id="dropdown-content">
+              <a href="./static/review/food/index.html">Food</a>
+              <a href="./static/review/tech/index.html">Technology</a>
+            </div>
+          </div>
+
+          <a href="./contact">Contact</a>
+          <a href="./about">About</a>
+        </div>
+      </nav>
+{{end}}

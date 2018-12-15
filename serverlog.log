@@ -1,73 +1,64 @@
-Logged : 2018/12/14 21:26:57 Starting server on port 9090
-2018/12/14 21:27:13 http: panic serving [::1]:54508: runtime error: invalid memory address or nil pointer dereference
-goroutine 20 [running]:
-net/http.(*conn).serve.func1(0xc042058d20)
-	C:/Go/src/net/http/server.go:1726 +0xd7
-panic(0x71c1e0, 0x952b10)
-	C:/Go/src/runtime/panic.go:502 +0x237
-html/template.(*Template).escape(0x0, 0x0, 0x0)
-	C:/Go/src/html/template/template.go:95 +0x35
-html/template.(*Template).Execute(0x0, 0x7bf420, 0xc0421d4000, 0x0, 0x0, 0xc0420225d0, 0xc042048218)
-	C:/Go/src/html/template/template.go:119 +0x36
-main.testHandler(0x7c1f20, 0xc0421d4000, 0xc042130400)
-	C:/Go/workspace/src/github.com/jzng89/TLDR Go/mainserver.go:40 +0xe6
-net/http.HandlerFunc.ServeHTTP(0x796370, 0x7c1f20, 0xc0421d4000, 0xc042130400)
-	C:/Go/src/net/http/server.go:1947 +0x4b
-net/http.(*ServeMux).ServeHTTP(0x9618c0, 0x7c1f20, 0xc0421d4000, 0xc042130400)
-	C:/Go/src/net/http/server.go:2337 +0x137
-net/http.serverHandler.ServeHTTP(0xc042064f70, 0x7c1f20, 0xc0421d4000, 0xc042130400)
-	C:/Go/src/net/http/server.go:2694 +0xc3
-net/http.(*conn).serve(0xc042058d20, 0x7c20e0, 0xc042048340)
-	C:/Go/src/net/http/server.go:1830 +0x658
-created by net/http.(*Server).Serve
-	C:/Go/src/net/http/server.go:2795 +0x282
-2018/12/14 21:27:18 http: panic serving [::1]:54509: runtime error: invalid memory address or nil pointer dereference
-goroutine 7 [running]:
-net/http.(*conn).serve.func1(0xc0421ec000)
-	C:/Go/src/net/http/server.go:1726 +0xd7
-panic(0x71c1e0, 0x952b10)
-	C:/Go/src/runtime/panic.go:502 +0x237
-html/template.(*Template).escape(0x0, 0x0, 0x0)
-	C:/Go/src/html/template/template.go:95 +0x35
-html/template.(*Template).Execute(0x0, 0x7bf420, 0xc0421d40e0, 0x0, 0x0, 0xc0420226f0, 0xc04213c498)
-	C:/Go/src/html/template/template.go:119 +0x36
-main.testHandler(0x7c1f20, 0xc0421d40e0, 0xc04214c500)
-	C:/Go/workspace/src/github.com/jzng89/TLDR Go/mainserver.go:40 +0xe6
-net/http.HandlerFunc.ServeHTTP(0x796370, 0x7c1f20, 0xc0421d40e0, 0xc04214c500)
-	C:/Go/src/net/http/server.go:1947 +0x4b
-net/http.(*ServeMux).ServeHTTP(0x9618c0, 0x7c1f20, 0xc0421d40e0, 0xc04214c500)
-	C:/Go/src/net/http/server.go:2337 +0x137
-net/http.serverHandler.ServeHTTP(0xc042064f70, 0x7c1f20, 0xc0421d40e0, 0xc04214c500)
-	C:/Go/src/net/http/server.go:2694 +0xc3
-net/http.(*conn).serve(0xc0421ec000, 0x7c20e0, 0xc04213c400)
-	C:/Go/src/net/http/server.go:1830 +0x658
-created by net/http.(*Server).Serve
-	C:/Go/src/net/http/server.go:2795 +0x282
-2018/12/14 21:27:20 http: panic serving [::1]:54511: runtime error: invalid memory address or nil pointer dereference
-goroutine 21 [running]:
-net/http.(*conn).serve.func1(0xc042058dc0)
-	C:/Go/src/net/http/server.go:1726 +0xd7
-panic(0x71c1e0, 0x952b10)
-	C:/Go/src/runtime/panic.go:502 +0x237
-html/template.(*Template).escape(0x0, 0x0, 0x0)
-	C:/Go/src/html/template/template.go:95 +0x35
-html/template.(*Template).Execute(0x0, 0x7bf420, 0xc0421d41c0, 0x0, 0x0, 0xc042022810, 0xc04213c498)
-	C:/Go/src/html/template/template.go:119 +0x36
-main.testHandler(0x7c1f20, 0xc0421d41c0, 0xc042130500)
-	C:/Go/workspace/src/github.com/jzng89/TLDR Go/mainserver.go:40 +0xe6
-net/http.HandlerFunc.ServeHTTP(0x796370, 0x7c1f20, 0xc0421d41c0, 0xc042130500)
-	C:/Go/src/net/http/server.go:1947 +0x4b
-net/http.(*ServeMux).ServeHTTP(0x9618c0, 0x7c1f20, 0xc0421d41c0, 0xc042130500)
-	C:/Go/src/net/http/server.go:2337 +0x137
-net/http.serverHandler.ServeHTTP(0xc042064f70, 0x7c1f20, 0xc0421d41c0, 0xc042130500)
-	C:/Go/src/net/http/server.go:2694 +0xc3
-net/http.(*conn).serve(0xc042058dc0, 0x7c20e0, 0xc0420485c0)
-	C:/Go/src/net/http/server.go:1830 +0x658
-created by net/http.(*Server).Serve
-	C:/Go/src/net/http/server.go:2795 +0x282
-Logged : 2018/12/14 21:27:46 Starting server on port 9090
-Logged : 2018/12/14 21:29:25 Starting server on port 9090
-Logged : 2018/12/14 21:36:56 Starting server on port 9090
-Logged : 2018/12/14 21:39:04 Starting server on port 9090
-Logged : 2018/12/14 21:48:00 Starting server on port 9090
-Logged : 2018/12/14 23:22:29 Starting server on port 9090
+
+TDLR : 2018/12/15 17:49:23 mainserver.go:85: Starting server on port 9090
+
+TDLR : 2018/12/15 17:49:36 mainserver.go:60: html/template: "/static/about" is undefined
+
+TDLR : 2018/12/15 17:49:56 mainserver.go:60: html/template: "/static/about" is undefined
+
+TDLR : 2018/12/15 17:54:14 mainserver.go:85: Starting server on port 9090
+
+TDLR : 2018/12/15 17:56:17 mainserver.go:87: Starting server on port 9090
+
+TDLR : 2018/12/15 17:56:39 mainserver.go:62: html/template: "about" is undefined
+
+TDLR : 2018/12/15 17:59:21 mainserver.go:86: Starting server on port 9090
+
+TDLR : 2018/12/15 17:59:29 mainserver.go:61: html/template: "about" is undefined
+
+TDLR : 2018/12/15 18:00:33 mainserver.go:86: Starting server on port 9090
+
+TDLR : 2018/12/15 18:00:38 mainserver.go:61: html/template: "about" is undefined
+
+TDLR : 2018/12/15 18:00:41 mainserver.go:61: html/template: "about" is undefined
+
+TDLR : 2018/12/15 18:01:41 mainserver.go:86: Starting server on port 9090
+
+TDLR : 2018/12/15 18:01:49 mainserver.go:61: html/template: "about" is undefined
+
+TDLR : 2018/12/15 18:13:13 mainserver.go:86: Starting server on port 9090
+
+TDLR : 2018/12/15 18:13:29 mainserver.go:60: html/template: "about" is undefined
+
+TDLR : 2018/12/15 18:18:13 mainserver.go:89: Starting server on port 9090
+
+TDLR : 2018/12/15 18:19:12 mainserver.go:86: Starting server on port 9090
+
+TDLR : 2018/12/15 18:19:20 mainserver.go:60: html/template: "test" is undefined
+
+TDLR : 2018/12/15 18:47:32 mainserver.go:93: Starting server on port 9090
+
+TDLR : 2018/12/15 18:47:50 mainserver.go:67: html/template: "about" is undefined
+
+TDLR : 2018/12/15 18:54:26 mainserver.go:72: Starting server on port 9090
+
+TDLR : 2018/12/15 18:54:36 mainserver.go:33: html/template:index.html:17:11: no such template "footer"
+
+TDLR : 2018/12/15 18:58:13 mainserver.go:93: Starting server on port 9090
+
+TDLR : 2018/12/15 18:58:23 mainserver.go:67: html/template: "about" is undefined
+
+TDLR : 2018/12/15 18:58:36 mainserver.go:67: html/template: "about" is undefined
+
+TDLR : 2018/12/15 19:00:34 mainserver.go:93: Starting server on port 9090
+
+TDLR : 2018/12/15 19:00:43 mainserver.go:67: html/template: "about" is undefined
+
+TDLR : 2018/12/15 19:04:39 mainserver.go:94: Starting server on port 9090
+
+TDLR : 2018/12/15 19:05:04 mainserver.go:68: html/template: "about" is undefined
+
+TDLR : 2018/12/15 19:05:09 mainserver.go:68: html/template: "about" is undefined
+
+TDLR : 2018/12/15 19:05:37 mainserver.go:93: Starting server on port 9090
+
+TDLR : 2018/12/15 19:05:55 mainserver.go:67: html/template: "about" is undefined
